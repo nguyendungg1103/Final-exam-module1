@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr =[1,2,3,4];
+    function findNumber(arr) {
+        let max = arr[0];
+        let max2=arr[0];
+        let max3 =arr[0];
+        for(let i =0;i<arr.length;i++){
+            if(arr[i]>max){
+                max = arr[i];
+            } if (arr[i]>max2 && arr[i]<max){
+                max2 = arr[i];
+            } if(arr[i]>max3&& arr[i]<max2&& arr[i]<max){
+                max3= arr[i];
+
+            }
+
+        }
+        return max3;
+    }
+
+    console.log("so lon thu 3 trong mang la"+ max3);
+</script>
+
+</body>
+</html>
